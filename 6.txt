@@ -1,0 +1,50 @@
+The syntax of the `if` statement in Java is used to execute a block of code based on a condition. Here’s the basic syntax for the `if` statement:
+
+Basic `if` Statement
+
+```java
+if (condition) {
+    // Code to be executed if condition is true
+}
+```
+
+- **condition**: An expression that evaluates to a boolean value (`true` or `false`).
+- **Code block**: A block of code enclosed in curly braces `{}` that will be executed if the condition is `true`.
+
+Example-
+
+```java
+int number = 10;
+
+if (number > 0) {
+    System.out.println("The number is positive.");
+}
+```
+
+In this example, the condition `number > 0` is evaluated. Since `number` is 10 (which is greater than 0), the code inside the `if` block executes, and "The number is positive." is printed.
+
+`if-else` Statement
+
+If you want to execute different code blocks based on whether the condition is `true` or `false`, you use the `if-else` statement:
+
+```java
+if (condition) {
+    // Code to be executed if condition is true
+} else {
+    // Code to be executed if condition is false
+}
+```
+
+Example
+
+```java
+int number = -5;
+
+if (number > 0) {
+    System.out.println("The number is positive.");
+} else {
+    System.out.println("The number is non-positive.");
+}
+```
+
+In this example, since `number` is -5 (which is not greater than 0), the code inside the `else` block executes, and "The number is non-positive." is printed.

@@ -1,0 +1,63 @@
+The `switch` statement in Java allows you to execute different code blocks based on the value of a variable. It is a cleaner alternative to multiple `if-else` statements when dealing with multiple discrete values. Here's a summary of its syntax and usage:
+
+Syntax of `switch` Statement
+java
+switch (expression) {
+    case value1:
+        // Code to be executed if expression equals value1
+        break;
+    case value2:
+        // Code to be executed if expression equals value2
+        break;
+    // more cases...
+    default:
+        // Code to be executed if expression does not match any case
+}
+
+- expression: The variable or expression whose value is compared against each `case` value.
+- case value: Each `case` defines a possible value of the expression. If the value matches, the corresponding block of code is executed.
+- break: Exits the `switch` block. Without it, execution will continue into the next `case` (known as "fall-through").
+- default: Optional. This block is executed if none of the `case` values match the expression.
+
+Example-
+
+```java
+public class SwitchExample {
+    public static void main(String[] args) {
+        int day = 3;
+        
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+    }
+}
+```
+
+In this example:
+- The `switch` statement evaluates the `day` variable.
+- It matches `day` to `case 3`, so it prints "Wednesday".
+- The `break` statement prevents fall-through to subsequent cases.
+

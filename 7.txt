@@ -1,0 +1,72 @@
+In Java, there are three primary types of iterative (looping) statements used to repeat a block of code multiple times:
+
+1. `for` Loop
+
+The `for` loop is used when the number of iterations is known beforehand. It includes initialization, condition, and iteration expressions.
+
+Syntax:
+```java
+for (initialization; condition; iteration) {
+    // Code to be executed in each iteration
+}
+```
+
+Example:
+
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+
+- Initialization: `int i = 0` initializes the loop counter.
+- Condition: `i < 5` is checked before each iteration.
+- Iteration: `i++` increments the counter after each iteration.
+
+2. `while` Loop**
+
+The `while` loop is used when the number of iterations is not known in advance and the loop continues as long as the condition is true.
+
+Syntax:
+```java
+while (condition) {
+    // Code to be executed as long as condition is true
+}
+```
+
+Example:
+```java
+int i = 0;
+while (i < 5) {
+    System.out.println("Iteration: " + i);
+    i++;
+}
+```
+- The loop continues as long as `i < 5`. The counter `i` is incremented within the loop body.
+
+ 3. `do-while` Loop
+
+The `do-while` loop is similar to the `while` loop but guarantees that the code block is executed at least once because the condition is evaluated after the loop body.
+
+Syntax:
+```java
+do {
+    // Code to be executed
+} while (condition);
+```
+
+Example:
+```java
+int i = 0;
+do {
+    System.out.println("Iteration: " + i);
+    i++;
+} while (i < 5);
+```
+- The loop executes the code block first and then checks if `i < 5` to decide whether to continue.
+
+Summary
+
+- `for` Loop: Best when the number of iterations is known.
+- `while` Loop: Best when the number of iterations is not known, and you want to test the condition before executing the code.
+- `do-while` Loop: Similar to `while`, but guarantees at least one execution of the code block.
+
+Each type of loop provides a way to iterate over code blocks, with specific use cases depending on the problem and the need for initialization, condition checks, and iteration management.

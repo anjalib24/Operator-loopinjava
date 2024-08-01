@@ -1,0 +1,124 @@
+Conditional statements in Java control the flow of execution based on certain conditions. Here are the primary conditional statements:
+
+1. `if` Statement
+
+The `if` statement evaluates a condition and executes a block of code if the condition is true.
+
+Syntax:
+```java
+if (condition) {
+    // Code to be executed if condition is true
+}
+```
+
+Example:
+```java
+int number = 10;
+if (number > 0) {
+    System.out.println("The number is positive.");
+}
+```
+2. `if-else` Statement
+
+The `if-else` statement provides an alternative block of code to execute if the condition is false.
+
+Syntax:
+```java
+if (condition) {
+    // Code to be executed if condition is true
+} else {
+    // Code to be executed if condition is false
+}
+```
+
+Example:
+```java
+int number = -5;
+if (number > 0) {
+    System.out.println("The number is positive.");
+} else {
+    System.out.println("The number is non-positive.");
+}
+```
+3. `if-else if-else` Statement
+
+This statement is used to test multiple conditions. If the first condition is false, it evaluates the next condition, and so on. If none of the conditions are true, the `else` block is executed.
+
+Syntax:
+```java
+if (condition1) {
+    // Code to be executed if condition1 is true
+} else if (condition2) {
+    // Code to be executed if condition2 is true
+} else {
+    // Code to be executed if none of the above conditions are true
+}
+```
+
+Example:
+```java
+int number = 0;
+if (number > 0) {
+    System.out.println("The number is positive.");
+} else if (number < 0) {
+    System.out.println("The number is negative.");
+} else {
+    System.out.println("The number is zero.");
+}
+```
+
+4. `switch` Statement
+
+The `switch` statement allows you to select one of many code blocks to execute. It is often used when you have multiple discrete values for a variable.
+
+Syntax:
+```java
+switch (expression) {
+    case value1:
+        // Code to be executed if expression equals value1
+        break;
+    case value2:
+        // Code to be executed if expression equals value2
+        break;
+    // more cases...
+    default:
+        // Code to be executed if expression does not match any case
+}
+```
+
+Example:
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+        break;
+}
+```
+
+5. Conditional (Ternary) Operator
+
+The ternary operator provides a shorthand way to evaluate a condition and choose between two values.
+
+Syntax:
+```java
+result = (condition) ? valueIfTrue : valueIfFalse;
+```
+
+Example:
+```java
+int number = 10;
+String result = (number % 2 == 0) ? "Even" : "Odd";
+System.out.println(result); // Output: Even
+```
+
+These conditional statements and operators help you control the flow of your program based on various conditions.

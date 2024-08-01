@@ -1,0 +1,46 @@
+In Java, arithmetic operators follow a specific order of precedence, which determines the order in which operations are performed in expressions. Here’s the priority of arithmetic operators, from highest to lowest:
+
+1. Unary Operators:
+   - `++` (pre-increment), `--` (pre-decrement), `+` (unary plus), `-` (unary minus), `!` (logical NOT), `~` (bitwise NOT)
+
+2. Multiplication, Division, and Modulus:
+   - `*` (multiplication)
+   - `/` (division)
+   - `%` (modulus)
+
+3. Addition and Subtraction:
+   - `+` (addition)
+   - `-` (subtraction)
+
+### Order of Precedence
+
+1. Unary Operators: These operators are evaluated first. For instance, `++a` increments `a` before using its value in an expression.
+
+2. Multiplication, Division, and Modulus: These operators are evaluated next. They have higher precedence than addition and subtraction. For example, in the expression `5 + 10 * 2`, the multiplication `10 * 2` is performed first, resulting in `20`, and then `5 + 20` is computed to give `25`.
+
+3. Addition and Subtraction: These operators have the lowest precedence among the arithmetic operators. They are evaluated after multiplication, division, and modulus.
+
+### Example
+
+```java
+public class OperatorPrecedenceExample {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        int c = 3;
+
+        // Expression: 5 + (10 * 3) - 4 / 2
+        int result = a + b * c - 4 / 2;
+
+        // Operations are performed as follows:
+        // 1. Multiplication: b * c = 10 * 3 = 30
+        // 2. Division: 4 / 2 = 2
+        // 3. Addition: a + 30 = 5 + 30 = 35
+        // 4. Subtraction: 35 - 2 = 33
+        System.out.println("Result: " + result); // Output: Result: 33
+    }
+}
+```
+
+In this example:
+- The multiplication (`b * c`) and division (`4 / 2`) are performed before the addition (`a + result of multiplication`) and subtraction (`result of addition - result of division`).

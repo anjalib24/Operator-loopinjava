@@ -1,0 +1,47 @@
+Operators in Java can be categorized based on the number of operands they require. Here are the main types:
+
+1. Unary Operators:
+   - Number of Operands: 1
+   - Examples: 
+     - `+` (unary plus)
+     - `-` (unary minus)
+     - `++` (increment)
+     - `--` (decrement)
+     - `!` (logical NOT)
+     - `~` (bitwise NOT)
+
+   Example:
+   
+   int a = 5;
+   int b = -a; // Unary minus
+   boolean flag = !true; // Logical NOT
+   
+
+2. Binary Operators:
+   - Number of Operands: 2
+   - Examples:
+     - Arithmetic: `+`, `-`, `*`, `/`, `%`
+     - Relational: `==`, `!=`, `>`, `<`, `>=`, `<=`
+     - Logical: `&&`, `||`
+     - Bitwise: `&`, `|`, `^`, `<<`, `>>`, `>>>`
+     - Assignment: `=`, `+=`, `-=`, `*=`, `/=`, `%=` (and more compound assignments)
+
+   Example:
+   
+   int x = 10;
+   int y = 20;
+   int sum = x + y; 
+   boolean isEqual = (x == y); 
+   
+
+3. Ternary Operator:
+   - Number of Operands: 3
+   - Example: 
+     - `? :` (conditional)
+   
+   Example:
+   
+   int max = (x > y) ? x : y; 
+   
+
+These operators handle different operations depending on their number of operands and the context in which they are used.

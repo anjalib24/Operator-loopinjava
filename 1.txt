@@ -1,0 +1,30 @@
+In Java, the conditional (ternary) operator is a concise way to perform conditional logic. It has the following format:
+
+
+condition ? trueExpression : falseExpression
+
+
+- condition: An expression that evaluates to `true` or `false`.
+- trueExpression: The value or expression that is evaluated and returned if the condition is `true`.
+- falseExpression: The value or expression that is evaluated and returned if the condition is `false`.
+
+Example:
+
+
+public class ConditionalOperatorExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        
+        // Using the ternary operator to find the maximum of a and b
+        int max = (a > b) ? a : b;
+
+        System.out.println("The maximum value is: " + max); // Output: The maximum value is: 20
+    }
+}
+
+
+In this example:
+- (a > b) is the condition.
+- `a` is the `trueExpression`, and `b` is the `falseExpression`.
+- If `a > b` is `true`, `max` will be `a`; otherwise, `max` will be `b`.
